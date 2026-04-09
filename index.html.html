@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa L’Héritage - AI Bất Động Sản</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ivory': '#F9F7F2',
+                        'beige-soft': '#F2EDE4',
+                        'taupe': '#8C857B',
+                        'charcoal': '#2C2C2C',
+                        'gold-brushed': '#C5A059',
+                        'deep-brass': '#9A7B4F',
+                        'onyx': '#1A1A1A'
+                    },
+                    fontFamily: {
+                        display: ['Playfair Display', 'serif'],
+                        serif: ['Lora', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F9F7F2;
+            color: #2C2C2C;
+            scroll-behavior: smooth;
+        }
+        .glass-header {
+            background: rgba(249, 247, 242, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(249, 247, 242, 0) 0%, rgba(249, 247, 242, 1) 100%);
+        }
+        .section-divider {
+            width: 80px;
+            height: 2px;
+            background: #C5A059;
+            margin: 2rem auto;
+        }
+        .prompt-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(197, 160, 89, 0.15);
+        }
+        .prompt-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border-color: #C5A059;
+        }
+        .letter-spacing-wide {
+            letter-spacing: 0.15em;
+        }
+        ::selection {
+            background: #C5A059;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-serif leading-relaxed">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 glass-header">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-display text-lg font-bold tracking-tighter text-gold-brushed">
+                AI BẤT ĐỘNG SẢN
+            </div>
+            <div class="font-sans text-xs uppercase tracking-widest text-taupe font-medium">
+                Phạm Hoàng Anh
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-[960px] mx-auto text-center">
+            <span class="font-sans text-xs uppercase tracking-[0.3em] text-gold-brushed mb-4 block">Architectural Concept</span>
+            <h1 class="font-display text-4xl md:text-6xl mb-8 leading-tight">Villa L’Héritage<br><span class="italic text-taupe font-normal text-3xl md:text-5xl">Sự tĩnh lặng của quyền quý</span></h1>
+            <div class="section-divider"></div>
+            <p class="text-lg md:text-xl text-charcoal/80 max-w-2xl mx-auto italic leading-relaxed">
+                Công trình là một bản giao hưởng giữa tinh thần Tân cổ điển Pháp cuối thế kỷ mười chín và triết lý sống thượng lưu kín đáo.
+            </p>
+            <p class="mt-8 text-charcoal/90 leading-loose">
+                Lấy cảm hứng từ hình tượng những quý ông miền Nam nước Pháp với phong cách lịch lãm nhưng đầy kỷ luật, không gian không phô trương bằng những chi tiết rườm rà mà khẳng định vị thế qua sự tinh tế trong tỉ lệ kiến trúc và độ hoàn thiện tinh xảo. Đây là nơi sự xa hoa được định nghĩa lại qua sự tĩnh tại và chiều sâu của tâm hồn, một di sản sống động dành cho những người trân trọng những giá trị bền vững theo thời gian.
+            </p>
+        </div>
+    </section>
+
+    <!-- Analysis Section -->
+    <section class="py-20 bg-beige-soft/50 px-6">
+        <div class="max-w-[960px] mx-auto">
+            <h2 class="font-display text-3xl mb-10 flex items-center gap-4">
+                <span class="text-gold-brushed text-sm font-sans tracking-widest">01</span>
+                Phân tích hiện trạng
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="space-y-6 text-charcoal/90">
+                    <p>Tọa lạc trên quỹ đất bốn trăm năm mươi mét vuông tại khu vực Thủ Đức, công trình sở hữu lợi thế lớn về phương hướng khi mặt tiền đón trọn luồng gió và ánh sáng tự nhiên từ hướng Đông Nam.</p>
+                    <p>Chiều cao thông tầng sáu mét rưỡi tại khu sinh hoạt chính là một đặc điểm kiến trúc đắt giá, tạo tiền đề để thiết lập những chuẩn mực không gian bề thế.</p>
+                </div>
+                <div class="border-l-2 border-gold-brushed/30 pl-8 py-2">
+                    <p class="italic text-taupe">"Thách thức đặt ra là việc chuyển hóa những thông số diện tích và độ cao ấn tượng thành một không gian ấm cúng thông qua giải pháp cân bằng giữa ánh sáng tự nhiên và các gam màu tối."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Descriptions Section -->
+    <section class="py-24 px-6">
+        <div class="max-w-[960px] mx-auto">
+            <h2 class="font-display text-3xl mb-16 flex items-center gap-4">
+                <span class="text-gold-brushed text-sm font-sans tracking-widest">02</span>
+                Mô tả không gian chi tiết
+            </h2>
+            
+            <div class="space-y-20">
+                <!-- Grand Salon Sub-section -->
+                <div class="relative">
+                    <h3 class="font-display text-5xl mb-8 text-gold-brushed opacity-20 absolute -top-10 -left-4 pointer-events-none">Grand Salon</h3>
+                    <h3 class="font-display text-2xl mb-6 relative z-10">Thánh đường của Tri thức & Đối thoại</h3>
+                    <div class="prose prose-lg text-charcoal/90 space-y-6 max-w-none">
+                        <p>Bước vào công trình là sự phân tách mạch lạc và đầy ý đồ giữa Phòng khách tiếp khách thông thường và <strong>Grand Salon</strong>. Nếu phòng khách là nơi tiếp đón những câu chuyện xã giao đời thường, thì Grand Salon lại được thiết lập như một thánh đường của tri thức và sự đối thoại sâu sắc.</p>
+                        <p>Với trần cao sáu mét rưỡi khoáng đạt, Grand Salon hoàn toàn vắng bóng sự hiện diện của các thiết bị điện tử hay tivi để tránh sự xao nhãng. Tâm điểm của căn phòng là những hệ tủ sách bằng gỗ tự nhiên kịch trần, nơi lưu giữ kho tàng tư duy của gia chủ.</p>
+                        <p>Không gian được định vị bởi các cặp ghế đối thoại bọc da thủ công, hướng con người vào sự kết nối chân thật qua ánh mắt và ngôn từ. Những bức tranh sơn dầu khổ lớn được bố trí có tính toán trên các mảng tường cao, soi rọi dưới hệ thống chiếu sáng vàng ấm, tạo nên những khoảng chuyển tiếp nhịp nhàng giữa ánh sáng và bóng tối, khơi gợi cảm xúc trầm mặc và thanh thản trong tâm hồn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Palette Section -->
+    <section class="py-20 bg-onyx text-ivory px-6">
+        <div class="max-w-[960px] mx-auto">
+            <h2 class="font-display text-3xl mb-12 flex items-center gap-4">
+                <span class="text-gold-brushed text-sm font-sans tracking-widest">03</span>
+                Bảng vật liệu & Màu sắc
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="p-6 border border-white/10 flex flex-col items-center text-center">
+                    <div class="w-12 h-12 bg-[#3D2B1F] rounded-full mb-4 shadow-xl border border-white/20"></div>
+                    <span class="font-sans text-xs tracking-widest uppercase mb-2">Primary Wood</span>
+                    <p class="font-display italic">Gỗ óc chó</p>
+                </div>
+                <div class="p-6 border border-white/10 flex flex-col items-center text-center">
+                    <div class="w-12 h-12 bg-charcoal rounded-full mb-4 shadow-xl border border-white/20"></div>
+                    <span class="font-sans text-xs tracking-widest uppercase mb-2">Flooring</span>
+                    <p class="font-display italic">Đá cẩm thạch đen</p>
+                </div>
+                <div class="p-6 border border-white/10 flex flex-col items-center text-center">
+                    <div class="w-12 h-12 bg-gold-brushed rounded-full mb-4 shadow-xl border border-white/20"></div>
+                    <span class="font-sans text-xs tracking-widest uppercase mb-2">Accents</span>
+                    <p class="font-display italic">Đồng thau nguyên bản</p>
+                </div>
+            </div>
+            <p class="text-ivory/70 leading-loose text-center max-w-3xl mx-auto italic">
+                Dự án sử dụng hệ màu trầm tối sang trọng làm chủ đạo. Sự tương phản giữa bề mặt nhám của đá và độ bóng nhẹ của lớp sơn mài tạo nên một kịch bản chất liệu phong phú, kích thích đa giác quan nhưng vẫn tuân thủ kỷ luật thẩm mỹ nghiêm ngặt.
+            </p>
+        </div>
+    </section>
+
+    <!-- Visuals Section -->
+    <section class="py-24 px-6 bg-ivory">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl mb-4">Phối cảnh Kiến trúc</h2>
+                <p class="font-sans text-xs tracking-[0.4em] uppercase text-taupe">Visual Interpretations</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Image 1 -->
+                <div class="prompt-card bg-white p-6 rounded-sm shadow-sm group">
+                    <div class="overflow-hidden mb-6 aspect-[4/3] bg-beige-soft flex items-center justify-center">
+                        <img src='https://opal.google/board/blobs/7e25260b-0347-482a-ac41-46cefafa1fa5' alt='Grand Salon Overall View' class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" />
+                    </div>
+                    <div class="px-2">
+                        <p class="text-sm font-sans text-charcoal/70 mb-4 line-clamp-3 leading-relaxed">
+                            Grand Salon interior with 6.5m high ceiling, floor-to-ceiling bookshelves, dialogue seating arrangement, neoclassical French aesthetic, warm golden lighting.
+                        </p>
+                        <div class="pt-4 border-t border-beige-soft flex justify-between items-center">
+                            <span class="text-[10px] font-sans uppercase tracking-widest text-taupe italic">Copy prompt này dán vào Grok Imagine hoặc Flux để xem hình ngay</span>
+                            <button onclick="navigator.clipboard.writeText('Grand Salon interior with 6.5m high ceiling, floor-to-ceiling bookshelves, dialogue seating arrangement, neoclassical French aesthetic, warm golden lighting.')" class="text-gold-brushed hover:text-deep-brass transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M216,40H88a16,16,0,0,0-16,16v72a16,16,0,0,0,16,16h128a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,88H88V56H216v72ZM176,152v48H48V72H96a8,8,0,0,0,0-16H48A16,16,0,0,0,32,72V200a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V152a8,8,0,0,0-16,0Z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="prompt-card bg-white p-6 rounded-sm shadow-sm group">
+                    <div class="overflow-hidden mb-6 aspect-[4/3] bg-beige-soft flex items-center justify-center">
+                        <img src='https://opal.google/board/blobs/4d081e8b-a1a6-483a-8703-f22c9bfa75ef' alt='Material Detail' class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" />
+                    </div>
+                    <div class="px-2">
+                        <p class="text-sm font-sans text-charcoal/70 mb-4 line-clamp-3 leading-relaxed">
+                            Macro shot of black marble flooring meeting walnut wood paneling, brass inlay details, luxury textures, moody cinematic lighting.
+                        </p>
+                        <div class="pt-4 border-t border-beige-soft flex justify-between items-center">
+                            <span class="text-[10px] font-sans uppercase tracking-widest text-taupe italic">Copy prompt này dán vào Grok Imagine hoặc Flux để xem hình ngay</span>
+                            <button onclick="navigator.clipboard.writeText('Macro shot of black marble flooring meeting walnut wood paneling, brass inlay details, luxury textures, moody cinematic lighting.')" class="text-gold-brushed hover:text-deep-brass transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M216,40H88a16,16,0,0,0-16,16v72a16,16,0,0,0,16,16h128a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,88H88V56H216v72ZM176,152v48H48V72H96a8,8,0,0,0,0-16H48A16,16,0,0,0,32,72V200a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V152a8,8,0,0,0-16,0Z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="prompt-card bg-white p-6 rounded-sm shadow-sm group">
+                    <div class="overflow-hidden mb-6 aspect-[4/3] bg-beige-soft flex items-center justify-center">
+                        <img src='https://opal.google/board/blobs/96981273-05f9-4f25-a5d1-ff175244d41c' alt='Light and Shadow' class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" />
+                    </div>
+                    <div class="px-2">
+                        <p class="text-sm font-sans text-charcoal/70 mb-4 line-clamp-3 leading-relaxed">
+                            Large scale oil painting on a tall dark charcoal wall, subtle spotlight, quiet luxury atmosphere, deep shadows, refined neoclassical villa interior.
+                        </p>
+                        <div class="pt-4 border-t border-beige-soft flex justify-between items-center">
+                            <span class="text-[10px] font-sans uppercase tracking-widest text-taupe italic">Copy prompt này dán vào Grok Imagine hoặc Flux để xem hình ngay</span>
+                            <button onclick="navigator.clipboard.writeText('Large scale oil painting on a tall dark charcoal wall, subtle spotlight, quiet luxury atmosphere, deep shadows, refined neoclassical villa interior.')" class="text-gold-brushed hover:text-deep-brass transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M216,40H88a16,16,0,0,0-16,16v72a16,16,0,0,0,16,16h128a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,88H88V56H216v72ZM176,152v48H48V72H96a8,8,0,0,0,0-16H48A16,16,0,0,0,32,72V200a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V152a8,8,0,0,0-16,0Z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="prompt-card bg-white p-6 rounded-sm shadow-sm group">
+                    <div class="overflow-hidden mb-6 aspect-[4/3] bg-beige-soft flex items-center justify-center">
+                        <img src='https://opal.google/board/blobs/3307501f-2320-455e-a395-aa6c0567e602' alt='Facade Integration' class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" />
+                    </div>
+                    <div class="px-2">
+                        <p class="text-sm font-sans text-charcoal/70 mb-4 line-clamp-3 leading-relaxed">
+                            Villa L’Héritage facade at dusk, warm glow from 6.5m high windows, Southeast orientation, elegant neoclassical architectural lines, refined Thủ Đức neighborhood context.
+                        </p>
+                        <div class="pt-4 border-t border-beige-soft flex justify-between items-center">
+                            <span class="text-[10px] font-sans uppercase tracking-widest text-taupe italic">Copy prompt này dán vào Grok Imagine hoặc Flux để xem hình ngay</span>
+                            <button onclick="navigator.clipboard.writeText('Villa L’Héritage facade at dusk, warm glow from 6.5m high windows, Southeast orientation, elegant neoclassical architectural lines, refined Thủ Đức neighborhood context.')" class="text-gold-brushed hover:text-deep-brass transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M216,40H88a16,16,0,0,0-16,16v72a16,16,0,0,0,16,16h128a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,88H88V56H216v72ZM176,152v48H48V72H96a8,8,0,0,0,0-16H48A16,16,0,0,0,32,72V200a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V152a8,8,0,0,0-16,0Z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="py-24 px-6 bg-beige-soft relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-gold-brushed opacity-5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+        <div class="max-w-[800px] mx-auto text-center relative z-10">
+            <h2 class="font-display text-3xl mb-12">Lời kết & Lời mời</h2>
+            <div class="space-y-8 text-charcoal/90 leading-loose text-lg">
+                <p>
+                    Một không gian kiến trúc có chiều sâu không chỉ được tạo nên bởi giá trị vật chất mà còn bởi tầm vóc của người làm chủ nó. Villa L’Héritage không đơn thuần là một nơi cư ngụ, mà là bản tuyên ngôn về một lối sống văn minh và kỷ luật.
+                </p>
+                <p>
+                    Vẻ đẹp lộng lẫy của Grand Salon hay sự tĩnh mịch của những hành lang dài không nhằm mục đích phô diễn, mà là lời nhắc nhở không ngừng về việc trau dồi tri thức và hoàn thiện bản thân.
+                </p>
+                <div class="pt-6">
+                    <a href="www.phamhoanganhtokens.com" target="_blank" class="inline-block px-12 py-4 bg-charcoal text-ivory font-sans text-xs uppercase tracking-[0.3em] hover:bg-gold-brushed transition-all duration-500 shadow-xl">
+                        Khám phá thêm về chúng tôi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Elegant Footer -->
+    <footer class="py-12 border-t border-gold-brushed/10 bg-ivory text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <a href="www.phamhoanganhtokens.com" target="_blank" class="font-sans text-xs uppercase tracking-widest text-taupe hover:text-gold-brushed transition-colors">
+                www.phamhoanganhtokens.com
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Subtle scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-10');
+                    entry.target.classList.remove('opacity-0');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'translate-y-10', 'opacity-0');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
