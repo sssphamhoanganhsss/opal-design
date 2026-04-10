@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Cáo Phân Tích Đầu Tư: HAGL (HAG)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0f172a',
+                            gold: '#b5935b',
+                            teal: '#134e4a',
+                            slate: '#334155',
+                            light: '#f8fafc',
+                        },
+                    },
+                    fontFamily: {
+                        display: ['Montserrat', 'sans-serif'],
+                        body: ['"Source Sans Pro"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f1f5f9;
+            color: #1e293b;
+            font-family: 'Source Sans Pro', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+        }
+        .gradient-border {
+            border-left: 4px solid #0f172a;
+        }
+        .section-header {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .status-badge {
+            background: linear-gradient(135deg, #134e4a, #0f172a);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-brand-navy rounded-lg flex items-center justify-center text-white font-extrabold text-xl">AI</div>
+                <h1 class="font-display font-bold text-xl tracking-tight text-brand-navy">Investment <span class="text-brand-gold">Analysis</span></h1>
+            </div>
+            <div class="hidden md:flex gap-6 text-sm font-semibold text-brand-slate uppercase tracking-widest">
+                <span>Real-Time Reports</span>
+                <span class="text-brand-gold">HAG: HOSE</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-12">
+        
+        <!-- Page Title & Meta -->
+        <div class="space-y-4 fade-in">
+            <h2 class="font-display font-extrabold text-3xl md:text-5xl text-brand-navy leading-tight">
+                BÁO CÁO PHÂN TÍCH ĐẦU TƯ: <br>CÔNG TY CỔ PHẦN HOÀNG ANH GIA LAI
+            </h2>
+            <div class="flex flex-wrap items-center gap-4 text-brand-slate font-medium">
+                <span class="flex items-center gap-1">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    10/04/2026
+                </span>
+                <span class="flex items-center gap-1">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    AI Chief of Staff
+                </span>
+                <span class="status-badge tracking-widest">MÃ: HAG</span>
+            </div>
+        </div>
+
+        <!-- CEO Query Section -->
+        <section class="fade-in" style="animation-delay: 0.1s;">
+            <div class="bg-brand-navy text-white rounded-2xl p-8 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 13.1216 16 12.017 16C10.9124 16 10.017 16.8954 10.017 18L10.017 21H4.01704C3.46476 21 3.01704 20.5523 3.01704 20V4C3.01704 3.44772 3.46476 3 4.01704 3H20.017C20.5693 3 21.017 3.44772 21.017 4V20C21.017 20.5523 20.5693 21 20.017 21H14.017ZM12.017 13C14.7784 13 17.017 10.7614 17.017 8C17.017 5.23858 14.7784 3 12.017 3C9.25562 3 7.01704 5.23858 7.01704 8C7.01704 10.7614 9.25562 13 12.017 13Z"/></svg>
+                </div>
+                <div class="relative z-10">
+                    <p class="text-brand-gold font-display font-bold uppercase text-xs tracking-widest mb-3">Yêu Cầu Từ CEO</p>
+                    <blockquote class="text-2xl md:text-3xl font-display font-medium leading-relaxed italic">
+                        "Tôi đầu tư Hoàng Anh Gia Lai được không ?"
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Report Content -->
+        <div class="grid grid-cols-1 gap-8">
+            
+            <!-- Tổng quan dự án/sản phẩm -->
+            <article class="glass-card rounded-2xl p-8 gradient-border fade-in" style="animation-delay: 0.2s;">
+                <h3 class="section-header text-brand-navy font-bold text-xl mb-6 flex items-center gap-3">
+                    <span class="w-8 h-1 bg-brand-gold"></span>
+                    Tổng quan dự án/sản phẩm
+                </h3>
+                <div class="space-y-4 text-brand-slate leading-relaxed text-lg">
+                    <p>Hoàng Anh Gia Lai (HAGL) hiện đã hoàn tất quá trình tái cấu trúc, chuyển đổi mô hình từ tập đoàn đa ngành sang tập đoàn nông nghiệp tập trung cao độ với chiến lược <span class="font-bold text-brand-navy">"2 cây – 1 con"</span> (Sầu riêng, Chuối và Heo).</p>
+                    <ul class="list-none space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-gold mt-1">•</span>
+                            <span><strong>Quy mô:</strong> Tính đến tháng 4/2026, HAGL sở hữu hơn 7.000 ha sầu riêng (trong đó 2.000 ha đã cho thu hoạch), 7.000 ha chuối tại Việt Nam, Lào và Campuchia.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-gold mt-1">•</span>
+                            <span><strong>Mảng kinh doanh cốt lõi:</strong> Sầu riêng được định vị là sản phẩm mang lại biên lợi nhuận cao nhất (đột biến tăng trưởng), chuối là nguồn thu ổn định tạo dòng tiền hàng ngày, và chăn nuôi heo giúp tận dụng phụ phẩm từ chuối.</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Điểm mạnh -->
+            <article class="glass-card rounded-2xl p-8 border-l-4 border-teal-600 fade-in" style="animation-delay: 0.3s;">
+                <h3 class="section-header text-teal-800 font-bold text-xl mb-6 flex items-center gap-3">
+                    <span class="w-8 h-1 bg-teal-600"></span>
+                    Điểm mạnh nổi bật
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-teal-50/50 p-6 rounded-xl border border-teal-100">
+                        <h4 class="font-bold text-teal-900 mb-2">Tài chính hồi phục</h4>
+                        <p class="text-slate-600">Hạ tổng nợ từ 14.000 tỷ xuống còn dưới 6.000 tỷ đồng nhờ đối tác chiến lược LPBank.</p>
+                    </div>
+                    <div class="bg-teal-50/50 p-6 rounded-xl border border-teal-100">
+                        <h4 class="font-bold text-teal-900 mb-2">Sản phẩm đột phá</h4>
+                        <p class="text-slate-600">Sầu riêng trái vụ mang lại lợi nhuận gộp trên 60%, đáp ứng nhu cầu cực lớn từ Trung Quốc.</p>
+                    </div>
+                    <div class="bg-teal-50/50 p-6 rounded-xl border border-teal-100">
+                        <h4 class="font-bold text-teal-900 mb-2">Kinh tế tuần hoàn</h4>
+                        <p class="text-slate-600">Tận dụng phụ phẩm nông nghiệp làm thức ăn chăn nuôi, tối ưu hóa giá thành sản xuất.</p>
+                    </div>
+                    <div class="bg-teal-50/50 p-6 rounded-xl border border-teal-100">
+                        <h4 class="font-bold text-teal-900 mb-2">Quản trị minh bạch</h4>
+                        <p class="text-slate-600">Sự giám sát chặt chẽ từ đối tác ngân hàng giúp cải thiện tính tuân thủ và dòng tiền.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Rủi ro chính -->
+            <article class="glass-card rounded-2xl p-8 border-l-4 border-red-500 fade-in" style="animation-delay: 0.4s;">
+                <h3 class="section-header text-red-800 font-bold text-xl mb-6 flex items-center gap-3">
+                    <span class="w-8 h-1 bg-red-500"></span>
+                    Rủi ro cần lưu ý
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex gap-4 items-start p-4 bg-red-50/50 rounded-xl">
+                        <div class="bg-red-100 text-red-600 p-2 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-red-900">Thị trường tập trung</p>
+                            <p class="text-slate-600">Phụ thuộc >80% vào Trung Quốc. Rủi ro thay đổi chính sách nhập khẩu.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-4 bg-red-50/50 rounded-xl">
+                        <div class="bg-red-100 text-red-600 p-2 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-red-900">Biến đổi khí hậu</p>
+                            <p class="text-slate-600">El Niño gây thiếu nước tại Tây Nguyên & Nam Lào, đe dọa năng suất sầu riêng.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-4 bg-red-50/50 rounded-xl">
+                        <div class="bg-red-100 text-red-600 p-2 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-red-900">Lỗ lũy kế & Pháp lý</p>
+                            <p class="text-slate-600">Dưới 500 tỷ lỗ lũy kế cần xóa để được cấp margin. Rủi ro chính sách đất đai tại Lào/CPC.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Khuyến nghị -->
+            <article class="bg-gradient-to-br from-brand-navy to-brand-slate rounded-2xl p-10 text-white shadow-xl fade-in" style="animation-delay: 0.5s;">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8 border-b border-white/10 pb-6">
+                    <div>
+                        <h3 class="section-header text-brand-gold font-bold text-xl mb-2">Khuyến nghị đầu tư</h3>
+                        <p class="text-4xl font-extrabold tracking-tight">KHẢ QUAN <span class="text-brand-gold">(Dài hạn)</span></p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-lg p-4 rounded-xl border border-white/20">
+                        <p class="text-xs uppercase tracking-widest text-brand-gold mb-1">Loại hình</p>
+                        <p class="font-bold">Đầu tư tăng trưởng</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <h4 class="font-display font-bold text-lg text-brand-gold flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Điều kiện giải ngân
+                        </h4>
+                        <ul class="space-y-4 text-slate-300">
+                            <li class="flex gap-3">
+                                <span class="bg-brand-gold/20 text-brand-gold w-6 h-6 flex-shrink-0 rounded-full flex items-center justify-center text-xs font-bold">1</span>
+                                <span>Xác nhận xóa hoàn toàn lỗ lũy kế tại BCTC Quý 2/2026.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="bg-brand-gold/20 text-brand-gold w-6 h-6 flex-shrink-0 rounded-full flex items-center justify-center text-xs font-bold">2</span>
+                                <span>Theo dõi sát giá sầu riêng tại Trung Quốc & hạn mặn Gia Lai.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                        <h4 class="font-display font-bold text-lg text-brand-gold mb-4">Chiến lược giá (VNĐ)</h4>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-slate-400">Vùng gom mục tiêu</span>
+                                <span class="text-xl font-bold">18.000 – 20.000</span>
+                            </div>
+                            <div class="w-full bg-white/10 h-2 rounded-full overflow-hidden">
+                                <div class="bg-brand-gold h-full w-2/3"></div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-slate-400">Chốt lời kỳ vọng</span>
+                                <span class="text-xl font-bold text-green-400">28.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Lý do hỗ trợ & Nguồn -->
+            <div class="grid md:grid-cols-3 gap-8 fade-in" style="animation-delay: 0.6s;">
+                <article class="md:col-span-2 glass-card rounded-2xl p-8 border-l-4 border-brand-gold">
+                    <h3 class="section-header text-brand-navy font-bold text-xl mb-6">Lý do hỗ trợ</h3>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="font-display font-black text-4xl text-slate-200">01</div>
+                            <p class="text-brand-slate italic leading-relaxed">"Lợi nhuận sau thuế năm 2025 đạt ~1.800 tỷ đồng, minh chứng cho năng lực tạo tiền thực tế từ các nông trường."</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="font-display font-black text-4xl text-slate-200">02</div>
+                            <p class="text-brand-slate italic leading-relaxed">"Liên minh tín dụng với LPBank đảm bảo nguồn vốn lưu động ổn định và lãi suất ưu đãi vượt trội."</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="font-display font-black text-4xl text-slate-200">03</div>
+                            <p class="text-brand-slate italic leading-relaxed">"Xử lý dứt điểm các tranh chấp cũ và nghĩa vụ thuế, đảm bảo nền tảng pháp lý sạch cho quỹ đất."</p>
+                        </div>
+                    </div>
+                </article>
+
+                <aside class="glass-card rounded-2xl p-8 bg-slate-50">
+                    <h3 class="section-header text-brand-navy font-bold text-sm mb-6 opacity-70 tracking-widest">Nguồn thông tin</h3>
+                    <ul class="text-sm space-y-4 text-brand-slate font-medium">
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-brand-gold"></div>
+                            BCTC Kiểm toán 2025
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-brand-gold"></div>
+                            Nghị quyết ĐHĐCĐ 2026
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-brand-gold"></div>
+                            Dữ liệu HOSE 09/04/2026
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-brand-gold"></div>
+                            Báo cáo ngành Nông nghiệp
+                        </li>
+                    </ul>
+                    <div class="mt-8 pt-8 border-t border-slate-200">
+                        <p class="text-[10px] uppercase tracking-tighter text-slate-400 font-bold">Power Analytics Engine</p>
+                        <p class="text-xs font-bold text-brand-navy">AI-GENERATED INSIGHTS</p>
+                    </div>
+                </aside>
+            </div>
+
+        </div>
+
+        <!-- Professional Footer -->
+        <footer class="pt-12 pb-8 border-t border-slate-200 text-center space-y-4">
+            <div class="flex justify-center gap-4 text-brand-slate font-display font-bold text-xs tracking-widest opacity-50">
+                <span>RELIABILITY</span>
+                <span>•</span>
+                <span>TRANSPARENCY</span>
+                <span>•</span>
+                <span>GROWTH</span>
+            </div>
+            <p class="text-slate-400 text-xs italic">
+                Cảnh báo: Báo cáo này được tạo bởi AI cho mục đích tham khảo. Đầu tư chứng khoán luôn tiềm ẩn rủi ro. 
+                Vui lòng cân nhắc kỹ trước khi đưa ra quyết định tài chính.
+            </p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Simple entry animations for scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.style.opacity = '0';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
+
