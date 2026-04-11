@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI TRADING - Khuyến Nghị Giao Dịch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Times New Roman"', 'serif'],
+                    },
+                    colors: {
+                        primary: '#0056b3',
+                        background: '#fcfcfc',
+                        textDark: '#333333',
+                        buyGreen: '#10b981',
+                        sellRed: '#ef4444',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f0f2f5;
+            color: #333333;
+            line-height: 1.8;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #0056b3, transparent);
+            margin: 2rem 0;
+            opacity: 0.2;
+        }
+        .recommendation-value {
+            letter-spacing: 0.05em;
+        }
+        .text-justify {
+            text-align: justify;
+        }
+        @media (max-width: 640px) {
+            .text-justify {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body class="py-8 px-4 sm:px-6 lg:px-8 min-h-screen">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Main Container -->
+        <div class="glass-card rounded-2xl overflow-hidden p-8 sm:p-12">
+            
+            <!-- Header -->
+            <header class="text-center mb-12">
+                <h1 class="text-3xl sm:text-4xl font-bold text-primary uppercase tracking-tight mb-2">
+                    AI TRADING - Khuyến Nghị Giao Dịch
+                </h1>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+            </header>
+
+            <!-- Summary Section -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 bg-gray-50 p-6 rounded-xl border border-gray-100">
+                <div class="flex flex-col items-center md:items-start">
+                    <span class="text-sm uppercase text-gray-500 font-bold mb-1">Mã Giao Dịch</span>
+                    <span class="text-xl font-bold text-gray-800">USOIL</span>
+                </div>
+                <div class="flex flex-col items-center md:items-start border-y md:border-y-0 md:border-x border-gray-200 py-4 md:py-0 md:px-6">
+                    <span class="text-sm uppercase text-gray-500 font-bold mb-1">Số Dư Tài Khoản</span>
+                    <span class="text-xl font-bold text-gray-800">200 USD</span>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <span class="text-sm uppercase text-gray-500 font-bold mb-1">Phần Trăm Rủi Ro</span>
+                    <span class="text-xl font-bold text-gray-800">20.00%</span>
+                </div>
+            </section>
+
+            <!-- Trade Recommendation Details -->
+            <section>
+                <div class="flex items-center justify-between mb-8 border-b border-gray-100 pb-4">
+                    <h2 class="text-2xl font-bold text-primary italic">Chi Tiết Khuyến Nghị</h2>
+                    <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 bg-sellRed rounded-full animate-pulse"></span>
+                        <span class="text-sm font-bold text-gray-500 uppercase tracking-widest">Live Signal</span>
+                    </div>
+                </div>
+
+                <!-- Main Recommendation Display -->
+                <div class="text-center mb-10 py-6 bg-red-50 rounded-xl border-2 border-red-100">
+                    <span class="text-gray-600 uppercase text-sm font-bold block mb-2 tracking-widest">HƯỚNG GIAO DỊCH</span>
+                    <div class="text-6xl font-bold text-sellRed recommendation-value">BÁN (SELL)</div>
+                </div>
+
+                <!-- Key Parameters Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6 mb-12">
+                    <div class="flex justify-between items-center border-b border-gray-100 py-2">
+                        <span class="font-bold text-gray-600 italic">Điểm vào lệnh:</span>
+                        <span class="text-lg font-bold">95.63 USD</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-100 py-2">
+                        <span class="font-bold text-gray-600 italic">Khối lượng:</span>
+                        <span class="text-lg font-bold">1.50 Lot</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-100 py-2">
+                        <span class="font-bold text-gray-600 italic">Mức chốt lời (TP1/TP2):</span>
+                        <span class="text-lg font-bold text-buyGreen">92.50 / 90.00 USD</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-100 py-2">
+                        <span class="font-bold text-gray-600 italic">Mức cắt lỗ (SL):</span>
+                        <span class="text-lg font-bold text-sellRed">98.30 USD</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-100 py-2">
+                        <span class="font-bold text-gray-600 italic">Tỷ lệ rủi ro:</span>
+                        <span class="text-lg font-bold">20.00%</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-100 py-2">
+                        <span class="font-bold text-gray-600 italic">Điểm tin cậy:</span>
+                        <div class="flex items-center gap-2">
+                            <span class="text-lg font-bold text-primary">90%</span>
+                            <div class="w-16 bg-gray-200 h-2 rounded-full overflow-hidden">
+                                <div class="bg-primary h-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rationale Section -->
+                <div class="bg-white rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>
+                        Lý luận phân tích
+                    </h3>
+                    <div class="space-y-4 text-justify text-gray-700">
+                        <p>Chiến lược giao dịch được xây dựng dựa trên sự đồng thuận của 4 hệ thống phân tích với các luận điểm chính sau đây:</p>
+                        <p><strong>Động lượng và Xu hướng:</strong> Thị trường đang chịu áp lực bán tháo mạnh sau khi thất bại trong việc duy trì ngưỡng tâm lý quan trọng 100.46 USD. Các khung thời gian ngắn hạn (M15, H1, H4) đồng loạt xác nhận xu hướng giảm giá với cấu trúc đỉnh thấp dần. Giá hiện đang nằm dưới các đường trung bình động (EMA 9, 21, 50), cho thấy xu hướng giảm đang chiếm ưu thế tuyệt đối.</p>
+                        <p><strong>Chỉ báo kỹ thuật:</strong> RSI đang hướng xuống vùng quá bán và chỉ báo MACD xác nhận động lượng giảm đang gia tăng mạnh mẽ. Mục tiêu giá dự kiến sẽ kiểm định lại ngưỡng Fibonacci 61.8% tại vùng 92.20 USD và xa hơn là mức sàn hỗ trợ địa chính trị 90.00 USD.</p>
+                        <p><strong>Yếu tố cơ bản:</strong> Các cuộc đàm phán Mỹ-Iran diễn ra vào cuối tuần (11/04) mang lại kỳ vọng về việc gia tăng nguồn cung, điều này có thể tạo ra áp lực giảm giá đáng kể (Gap Down) khi thị trường mở cửa trở lại. Tuy nhiên, rủi ro từ việc phong tỏa Eo biển Hormuz vẫn duy trì một mức sàn hỗ trợ vững chắc cho giá dầu.</p>
+                        <p><strong>Quản lý rủi ro:</strong> Vị thế được tính toán với mức rủi ro 20% tài khoản (tương đương 40 USD) trên số dư 200 USD. Mặc dù tỷ lệ R/R hiện tại ở mức trung bình, nhưng sự đồng thuận từ các chỉ báo kỹ thuật và bối cảnh tin tức ủng hộ mạnh mẽ cho kịch bản giảm giá. Nhà đầu tư cần đặc biệt lưu ý quản lý lệnh chặt chẽ do khả năng xảy ra biến động giá lớn vào đầu tuần tới.</p>
+                        <p class="pt-4 border-t border-gray-50 font-bold italic text-gray-600">
+                            Cơ sở phân tích đạt mức độ tin cậy 90%, đủ điều kiện để thực thi chiến lược theo các thông số đã đề ra.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- Footer-style Branding (System Identity) -->
+            <div class="flex flex-col sm:flex-row justify-between items-center text-gray-400 text-sm italic py-4">
+                <div class="mb-2 sm:mb-0">Website: <a href="www.phamhoanganhtokens.com" target="_blank" class="hover:text-primary transition-colors">www.phamhoanganhtokens.com</a></div>
+                <div>Công ty: AI Design</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
