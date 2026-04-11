@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Master AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',    /* Deep Navy */
+                        accent: '#0d9488',     /* Rich Teal */
+                        accentHover: '#0f766e',
+                        surface: '#f8fafc',    /* Off-white background */
+                        cardBg: '#ffffff',
+                    },
+                    fontFamily: {
+                        serif: ['"Times New Roman"', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        .text-justify {
+            text-align: justify;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #0f172a 0%, #0d9488 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-divider {
+            height: 4px;
+            width: 60px;
+            background: #0d9488;
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header Section -->
+    <header class="pt-12 pb-8 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-widest text-teal-700 uppercase bg-teal-100 rounded-full">
+                AI Powered Design
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-4 leading-tight">
+                Thumbnail Master AI:<br>Các Mẫu Thumbnail Đề Xuất
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto text-justify">
+                Nâng tầm sự hiện diện trực tuyến của bạn với những thiết kế tối ưu hóa tỷ lệ nhấp (CTR) được hỗ trợ bởi trí tuệ nhân tạo.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        
+        <!-- User Design Information Section -->
+        <section class="mb-16">
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-slate-100 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-teal-50 rounded-bl-full -z-0 opacity-50"></div>
+                <div class="relative z-10">
+                    <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">Thông Tin Thiết Kế Gốc Của Bạn</h2>
+                    <div class="section-divider mb-8"></div>
+                    <div class="bg-slate-50 border-l-4 border-teal-600 p-6 rounded-r-xl">
+                        <p class="text-xl md:text-2xl italic leading-relaxed text-slate-800 text-justify">
+                            "Review Opal Workflow 9 AI Agent Phối Hợp Phân Tích & Đề Xuất 10 Cổ Phiếu Đáng Đầu Tư Nhất Việt Nam"
+                        </p>
+                    </div>
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-50">
+                            <h4 class="font-bold text-teal-800 mb-2">Chiến lược hình ảnh:</h4>
+                            <p class="text-justify text-slate-600">Sử dụng tỷ lệ vàng, quy tắc 1/3 và các yếu tố nhận diện cốt lõi (Sách hồng, QR Code, Logo AI ĐẦU TƯ).</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-50">
+                            <h4 class="font-bold text-teal-800 mb-2">Bảng màu:</h4>
+                            <p class="text-justify text-slate-600">Xanh dương đậm, tím hoàng gia, hồng điểm nhấn và xanh bạc hà/vàng nhạt tương phản.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Generated Thumbnails Section Header -->
+        <section class="mb-12 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-2">Các Mẫu Thumbnail Đã Tạo</h2>
+            <div class="section-divider"></div>
+            <p class="text-slate-500 mt-4">Chọn lựa giữa 5 phong cách thiết kế độc bản</p>
+        </section>
+
+        <!-- Thumbnails Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
+            
+            <!-- Card 1 -->
+            <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col h-full border border-slate-100">
+                <div class="relative group overflow-hidden bg-slate-200 aspect-video flex items-center justify-center">
+                    <img src='https://opal.google/board/blobs/16a2544e-13f1-4f6e-96ba-4ebd3970ceaa' alt='media_1' class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-primary mb-3">Mẫu Công Nghệ Workflow</h3>
+                    <p class="text-slate-600 mb-6 flex-grow text-justify">Tập trung vào giao diện các nút lệnh của Opal Workflow 9, làm nổi bật tính tự động và thông minh trong phân tích.</p>
+                    <div class="mt-auto border-t border-slate-100 pt-4">
+                        <span class="text-xs uppercase tracking-wider text-teal-600 font-bold">Tiêu đề gợi ý:</span>
+                        <p class="mt-1 font-bold text-primary text-justify">REVIEW SIÊU AI OPAL WORKFLOW 9</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col h-full border border-slate-100">
+                <div class="relative group overflow-hidden bg-slate-200 aspect-video flex items-center justify-center">
+                    <img src='https://opal.google/board/blobs/806e0598-6007-4664-ba25-7ef9161ceef8' alt='media_2' class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-primary mb-3">Mẫu Chuyên Gia Tài Chính</h3>
+                    <p class="text-slate-600 mb-6 flex-grow text-justify">Sử dụng hình ảnh cuốn sách hồng và bàn làm việc để tạo cảm giác thực tế, uy tín và chuyên sâu về đầu tư.</p>
+                    <div class="mt-auto border-t border-slate-100 pt-4">
+                        <span class="text-xs uppercase tracking-wider text-teal-600 font-bold">Tiêu đề gợi ý:</span>
+                        <p class="mt-1 font-bold text-primary text-justify">10 CỔ PHIẾU VÀNG NÊN ĐẦU TƯ</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col h-full border border-slate-100">
+                <div class="relative group overflow-hidden bg-slate-200 aspect-video flex items-center justify-center">
+                    <img src='https://opal.google/board/blobs/afd37e9e-19a0-4ab8-a157-7302d9a7d23c' alt='media_3' class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-primary mb-3">Mẫu Phân Tích Trực Quan</h3>
+                    <p class="text-slate-600 mb-6 flex-grow text-justify">Nhấn mạnh vào kết quả phân tích của AI với biểu đồ tài chính sinh động, thu hút người xem quan tâm đến số liệu.</p>
+                    <div class="mt-auto border-t border-slate-100 pt-4">
+                        <span class="text-xs uppercase tracking-wider text-teal-600 font-bold">Tiêu đề gợi ý:</span>
+                        <p class="mt-1 font-bold text-primary text-justify">AI CHỌN CỔ PHIẾU: ĐỘT PHÁ LỢI NHUẬN</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col h-full border border-slate-100">
+                <div class="relative group overflow-hidden bg-slate-200 aspect-video flex items-center justify-center">
+                    <img src='https://opal.google/board/blobs/a353c146-1e48-4255-b556-3b364edf94e2' alt='media_4' class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-primary mb-3">Mẫu Danh Sách Rút Gọn</h3>
+                    <p class="text-slate-600 mb-6 flex-grow text-justify">Bố cục rõ ràng, trực diện vào con số '10', tạo sự tò mò và kích thích nhấp chuột ngay lập tức.</p>
+                    <div class="mt-auto border-t border-slate-100 pt-4">
+                        <span class="text-xs uppercase tracking-wider text-teal-600 font-bold">Tiêu đề gợi ý:</span>
+                        <p class="mt-1 font-bold text-primary text-justify">TOP 10 SIÊU CỔ PHIẾU VIỆT NAM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col h-full border border-slate-100 md:col-span-2 lg:col-span-1">
+                <div class="relative group overflow-hidden bg-slate-200 aspect-video flex items-center justify-center">
+                    <img src='https://opal.google/board/blobs/42027a1f-1a2c-4dfc-a27b-94d1df950673' alt='media_5' class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-primary mb-3">Mẫu Thương Hiệu Đẳng Cấp</h3>
+                    <p class="text-slate-600 mb-6 flex-grow text-justify">Thiết kế tối giản, chuyên nghiệp tập trung vào thương hiệu AI Đầu Tư và quy trình tuyển chọn cổ phiếu.</p>
+                    <div class="mt-auto border-t border-slate-100 pt-4">
+                        <span class="text-xs uppercase tracking-wider text-teal-600 font-bold">Tiêu đề gợi ý:</span>
+                        <p class="mt-1 font-bold text-primary text-justify">CÔNG THỨC ĐẦU TƯ CÙNG AI AGENT</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
