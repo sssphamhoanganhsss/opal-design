@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Master AI - Bất Động Sản</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#f8fafc',
+                            dark: '#0f172a',
+                            accent: '#0d9488', // Teal accent
+                            gold: '#b45309',
+                        },
+                        surface: '#ffffff',
+                    },
+                    fontFamily: {
+                        'serif': ['"Times New Roman"', 'Times', 'serif'],
+                    },
+                    boxShadow: {
+                        'premium': '0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        .text-justify {
+            text-align: justify;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .title-gradient {
+            background: linear-gradient(135deg, #0d9488 0%, #0369a1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .thumbnail-card img {
+            transition: transform 0.5s ease;
+        }
+        .thumbnail-card:hover img {
+            transform: scale(1.03);
+        }
+        .section-divider {
+            height: 4px;
+            width: 60px;
+            background: #0d9488;
+            margin: 1.5rem auto;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-16">
+
+    <!-- Header Section -->
+    <header class="pt-16 pb-12 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest uppercase text-teal-700 bg-teal-100 rounded-full">AI Design Studio</span>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 title-gradient">
+                Thumbnail Master AI: Các Mẫu Thumbnail Đề Xuất
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto italic">
+                Giải pháp tối ưu hóa tỷ lệ nhấp (CTR) cho nội dung bất động sản cao cấp.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 md:px-8 space-y-16">
+        
+        <!-- User Design Information Section -->
+        <section class="animate-fade-in">
+            <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-premium p-8 md:p-10 border-t-4 border-teal-600">
+                <div class="flex items-center gap-3 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h2 class="text-2xl font-bold uppercase tracking-tight">Thông Tin Thiết Kế Gốc Của Bạn</h2>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                    <p class="text-justify text-xl leading-relaxed whitespace-pre-line">
+                        đất vườn sổ hồng riêng
+                        diện tích 2.149,4 m²
+                        chân núi Thị Vải - Bà Rịa Vũng Tàu nay là TP. Hồ Chí Minh
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Generated Thumbnails Section -->
+        <section>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold uppercase tracking-tight">Các Mẫu Thumbnail Đã Tạo</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Card 1 -->
+                <div class="thumbnail-card bg-white rounded-3xl overflow-hidden shadow-premium flex flex-col hover:shadow-hover transition-all duration-300">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://opal.google/board/blobs/34bf987f-71e7-4fdb-99ab-569372cb8951" alt="Thumbnail Pháp Lý Vững Chắc" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-teal-800 mb-4 uppercase">Thumbnail Pháp Lý Vững Chắc</h3>
+                        <p class="text-justify mb-6 text-slate-700">
+                            Tập trung vào cuốn Sổ hồng ở vị trí tiêu điểm theo quy tắc 1/3, mã QR và Quốc huy được làm nổi bật với hiệu ứng ánh sáng trắng. Phông nền là núi Thị Vải mờ ảo tạo chiều sâu.
+                        </p>
+                        <div class="mt-auto pt-6 border-t border-slate-100">
+                            <span class="block text-xs font-semibold text-amber-600 uppercase mb-2">Tiêu đề gợi ý:</span>
+                            <p class="text-justify font-bold text-slate-900 text-lg leading-tight">
+                                SỔ HỒNG RIÊNG - 2.149m² ĐẤT VƯỜN CHÍNH CHỦ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="thumbnail-card bg-white rounded-3xl overflow-hidden shadow-premium flex flex-col hover:shadow-hover transition-all duration-300">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://opal.google/board/blobs/ef035524-0f98-4efd-a359-65e88d718465" alt="Thumbnail Toàn Cảnh Giá Trị" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-teal-800 mb-4 uppercase">Thumbnail Toàn Cảnh Giá Trị</h3>
+                        <p class="text-justify mb-6 text-slate-700">
+                            Góc nhìn flycam từ trên cao bao quát diện tích khu đất 2.149,4 m². Cuốn sổ hồng xuất hiện trang trọng ở một góc với hiệu ứng phát sáng nhẹ, khẳng định tính pháp lý ngay lập tức.
+                        </p>
+                        <div class="mt-auto pt-6 border-t border-slate-100">
+                            <span class="block text-xs font-semibold text-amber-600 uppercase mb-2">Tiêu đề gợi ý:</span>
+                            <p class="text-justify font-bold text-slate-900 text-lg leading-tight">
+                                SIÊU PHẨM ĐẤT VƯỜN TP. HCM - 2.149m² CÔNG CHỨNG NGAY
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="thumbnail-card bg-white rounded-3xl overflow-hidden shadow-premium flex flex-col hover:shadow-hover transition-all duration-300">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://opal.google/board/blobs/11676c2d-aed3-4e39-b018-03b11c309d0a" alt="Thumbnail Kích Thích Đầu Tư" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-teal-800 mb-4 uppercase">Thumbnail Kích Thích Đầu Tư</h3>
+                        <p class="text-justify mb-6 text-slate-700">
+                            Sử dụng tông màu vàng sâm panh và xanh lá rực rỡ. Chữ tiêu đề lớn chiếm 40% khung hình phía bên phải. Bên trái là hình ảnh sổ hồng và logo công ty đặt tinh tế.
+                        </p>
+                        <div class="mt-auto pt-6 border-t border-slate-100">
+                            <span class="block text-xs font-semibold text-amber-600 uppercase mb-2">Tiêu đề gợi ý:</span>
+                            <p class="text-justify font-bold text-slate-900 text-lg leading-tight">
+                                CHỈ CÓ 1 LÔ DUY NHẤT: ĐẤT VƯỜN CHÂN NÚI THỊ VẢI
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="thumbnail-card bg-white rounded-3xl overflow-hidden shadow-premium flex flex-col hover:shadow-hover transition-all duration-300">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://opal.google/board/blobs/fc12fac5-bff7-45a3-b923-bd57d4cd3b01" alt="Thumbnail Trải Nghiệm Thực Tế" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-teal-800 mb-4 uppercase">Thumbnail Trải Nghiệm Thực Tế</h3>
+                        <p class="text-justify mb-6 text-slate-700">
+                            Bố cục thực tế với hình ảnh cận cảnh bàn tay cầm Sổ hồng, phía sau là khu đất vườn đầy tiềm năng. Sử dụng hiệu ứng light leak để tạo cảm giác chuyên nghiệp và tin cậy.
+                        </p>
+                        <div class="mt-auto pt-6 border-t border-slate-100">
+                            <span class="block text-xs font-semibold text-amber-600 uppercase mb-2">Tiêu đề gợi ý:</span>
+                            <p class="text-justify font-bold text-slate-900 text-lg leading-tight">
+                                KIỂM TRA QUY HOẠCH TẠI CHỖ - 2.149m² SỔ RIÊNG
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Content Analysis Information (Hidden logic but integrated in display) -->
+    <div class="hidden">
+        <p>Image Generation Instruction: Tạo 4 hình ảnh thumbnail YouTube khác nhau với kích thước 1280x720 px cho bất động sản. Mỗi hình ảnh phải thể hiện rõ một cuốn 'Sổ hồng' màu hồng đặc trưng của Việt Nam...</p>
+    </div>
+
+</body>
+</html>
