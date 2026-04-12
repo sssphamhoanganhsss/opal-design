@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân Tích Trí Tuệ Toàn Diện | Giải Bài Toán Khởi Nghiệp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            paper: '#FDFCF8', // Light cream/Off-white
+                            ink: '#1A1A1A',   // Deep charcoal
+                            gold: '#B08D57',  // Muted gold
+                            teal: '#2D5A5A',  // Deep teal
+                            bronze: '#8C5E3C' // Warm bronze
+                        }
+                    },
+                    fontFamily: {
+                        'serif': ['"Times New Roman"', 'Times', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FDFCF8;
+            color: #1A1A1A;
+            line-height: 1.8;
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        .justified-text {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .premium-border {
+            border-left: 3px solid #B08D57;
+            padding-left: 1.5rem;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(176, 141, 87, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-color: rgba(176, 141, 87, 0.5);
+        }
+
+        .bullet-point::before {
+            content: '♦';
+            color: #B08D57;
+            margin-right: 12px;
+            font-size: 0.8em;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #B08D57, transparent);
+            margin: 4rem 0;
+            opacity: 0.3;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .step-badge {
+            background: #B08D57;
+            color: white;
+            padding: 2px 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="max-w-4xl mx-auto pt-20 px-6 pb-12 text-center animate-fade">
+        <span class="text-brand-gold font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Khung Phân Tích Chuyên Sâu</span>
+        <h1 class="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+            Giải Bài Toán Khởi Nghiệp Với 1 Tỷ Đồng <br>
+            <span class="text-brand-teal italic font-normal text-3xl md:text-4xl mt-2 block italic">Dưới Góc Nhìn "Trí Tuệ Toàn Diện"</span>
+        </h1>
+        <div class="w-24 h-1 bg-brand-gold mx-auto mb-8"></div>
+        <p class="text-lg md:text-xl text-gray-700 italic max-w-2xl mx-auto">
+            Khám phá sự giao thoa giữa nguồn lực tài chính và nội lực trí tuệ để kiến tạo một doanh nghiệp bền vững.
+        </p>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+        
+        <!-- Pillar Analysis Section -->
+        <section class="mb-16 animate-fade" style="animation-delay: 0.2s;">
+            <h2 class="text-2xl md:text-3xl font-bold text-brand-teal mb-10 flex items-center">
+                <span class="mr-4">1.</span> PHÂN TÍCH 4 TRỤ CỘT TRÍ TUỆ TOÀN DIỆN
+            </h2>
+            
+            <div class="space-y-12">
+                <!-- Sub-pillar 1 -->
+                <div class="premium-border">
+                    <h3 class="text-xl font-bold mb-4 text-brand-bronze uppercase tracking-wide">Tam Thức & Cân Bằng (Mindset & Balance)</h3>
+                    <p class="justified-text text-gray-800 leading-relaxed">
+                        Sở hữu 1 tỷ đồng có thể gây ra trạng thái hưng phấn và ảo tưởng tài chính. Điều này đòi hỏi sự <strong>tĩnh lặng</strong> để phân biệt giữa đột phá đầy khát khao và thực tế khắc nghiệt của thị trường. Sự cân bằng nằm ở việc kiểm soát lòng tham để tránh các mô hình "làm giàu nhanh" và quản trị nỗi sợ để bước ra khỏi vùng an toàn. Tiền bạc là năng lượng; một tâm thức vững vàng chính là bộ điều khiển tối thượng.
+                    </p>
+                </div>
+
+                <!-- Sub-pillar 2 -->
+                <div class="premium-border">
+                    <h3 class="text-xl font-bold mb-4 text-brand-bronze uppercase tracking-wide">Hệ Thống & Hiểu Bản Thân (System & Self-Understanding)</h3>
+                    <p class="justified-text text-gray-800 leading-relaxed">
+                        Ưu tiên hàng đầu là phản chiếu nội tâm: "Tôi là ai và tôi giỏi nhất điều gì?". Việc <strong>thấu hiểu năng lực cốt lõi</strong> dẫn dắt đến việc lựa chọn sân chơi có lợi thế tuyệt đối (như kỹ thuật, giao tiếp, hay tư duy logic). 1 tỷ đồng nên được dùng để xây dựng một <strong>hệ thống vận hành</strong>, không phải chỉ là một "công việc làm thêm". Hãy thiết kế quy trình để doanh nghiệp có thể chạy độc lập, tránh rơi vào "bẫy người chủ".
+                    </p>
+                </div>
+
+                <!-- Sub-pillar 3 -->
+                <div class="premium-border">
+                    <h3 class="text-xl font-bold mb-4 text-brand-bronze uppercase tracking-wide">Gu Thẩm Mỹ & Tầm Nhìn (Aesthetics & Vision)</h3>
+                    <p class="justified-text text-gray-800 leading-relaxed">
+                        Trong một thị trường đông đúc, <strong>gu thẩm mỹ</strong> là bộ lọc khắt khe để định vị thương hiệu. Hình ảnh, bao bì và trải nghiệm khách hàng phải thể hiện sự tinh tế và bản sắc riêng, dù là ngành nghề nào. <strong>Tầm nhìn chiến lược</strong> đòi hỏi việc nhìn xa hơn những trào lưu nhất thời, hướng tới việc xây dựng giá trị bền vững và có khả năng mở rộng trong 3-5 năm tới.
+                    </p>
+                </div>
+
+                <!-- Sub-pillar 4 -->
+                <div class="premium-border">
+                    <h3 class="text-xl font-bold mb-4 text-brand-bronze uppercase tracking-wide">Công Cụ Hỗ Trợ (Supporting Tools)</h3>
+                    <p class="justified-text text-gray-800 leading-relaxed">
+                        Tập trung vào việc biến ý tưởng thành hiện thực thông qua <strong>kỷ luật tài chính</strong>: tuyệt đối không đầu tư kiểu "tất tay" (all-in). Tận dụng công nghệ số (AI, CRM, mini ERP) để tối ưu hóa chi phí vận hành. Công cụ quan trọng nhất chính là <strong>nhân sự</strong>: dùng tiền để mua thời gian và kỹ năng từ những cá nhân phù hợp hơn mình.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Core Conclusion Section -->
+        <section class="mb-16 animate-fade" style="animation-delay: 0.4s;">
+            <h2 class="text-2xl md:text-3xl font-bold text-brand-teal mb-8 flex items-center">
+                <span class="mr-4">2.</span> KẾT LUẬN CỐT LÕI & BÀI HỌC SÂU SẮC
+            </h2>
+            <div class="bg-stone-100 p-8 md:p-12 rounded-lg border border-stone-200">
+                <div class="mb-8">
+                    <h4 class="font-bold text-brand-ink mb-3 text-lg">Kết Luận Cốt Lõi:</h4>
+                    <p class="justified-text italic text-gray-700">
+                        1 tỷ đồng là một <strong>chất xúc tác</strong> khuếch đại những gì đang có. Nó tạo ra sự thịnh vượng nếu đi cùng trí tuệ; nó tan biến nếu đi cùng sự nóng vội. Việc chọn ngành nghề kinh doanh không quan trọng bằng việc <strong>nền tảng cá nhân</strong> đã chuẩn bị sẵn sàng để đón nhận và vận hành nó hay chưa.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-brand-ink mb-3 text-lg">Bài Học Sâu Sắc:</h4>
+                    <p class="justified-text text-gray-700">
+                        Khởi nghiệp không phải là phép tính cộng trừ của đồng vốn, mà là nghệ thuật hài hòa giữa <strong>sự tĩnh lặng nội tại</strong>, <strong>sự sắc bén của tư duy hệ thống</strong>, <strong>sự tinh tế của gu thẩm mỹ</strong> và <strong>sự thực dụng của công cụ</strong>. Hãy bắt đầu từ bên trong trước khi triển khai vốn ra bên ngoài.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Roadmap Section -->
+        <section class="mb-16 animate-fade" style="animation-delay: 0.6s;">
+            <h2 class="text-2xl md:text-3xl font-bold text-brand-teal mb-10 flex items-center">
+                <span class="mr-4">3.</span> LỘ TRÌNH HÀNH ĐỘNG
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Phase 1 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <span class="step-badge mb-4 inline-block">Giai đoạn 1</span>
+                    <h4 class="font-bold text-lg mb-2">Khám phá & Định vị</h4>
+                    <p class="text-sm text-brand-gold font-bold mb-3 italic">Chi phí: 0đ</p>
+                    <ul class="space-y-2">
+                        <li class="bullet-point text-sm justified-text">Dành 1-2 tháng đối thoại với bản thân để tìm năng lực cốt lõi.</li>
+                        <li class="bullet-point text-sm justified-text">Nghiên cứu thị trường sâu và chọn ngách phù hợp với thẩm mỹ và thế mạnh.</li>
+                    </ul>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <span class="step-badge mb-4 inline-block">Giai đoạn 2</span>
+                    <h4 class="font-bold text-lg mb-2">Thử nghiệm MVP</h4>
+                    <p class="text-sm text-brand-gold font-bold mb-3 italic">Ngân sách: 150 - 200 triệu</p>
+                    <ul class="space-y-2">
+                        <li class="bullet-point text-sm justified-text">Không đầu tư toàn bộ 1 tỷ ngay từ đầu.</li>
+                        <li class="bullet-point text-sm justified-text">Dùng 15-20% vốn tạo sản phẩm cốt lõi và tung ra thị trường để lấy phản hồi.</li>
+                    </ul>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <span class="step-badge mb-4 inline-block">Giai đoạn 3</span>
+                    <h4 class="font-bold text-lg mb-2">Chuẩn hóa & Thương hiệu</h4>
+                    <p class="text-sm text-brand-gold font-bold mb-3 italic">Ngân sách: 300 triệu</p>
+                    <ul class="space-y-2">
+                        <li class="bullet-point text-sm justified-text">Khi MVP có nhu cầu, đầu tư vào Công cụ hỗ trợ: quy trình tự động, bộ nhận diện chuyên nghiệp.</li>
+                    </ul>
+                </div>
+
+                <!-- Phase 4 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <span class="step-badge mb-4 inline-block">Giai đoạn 4</span>
+                    <h4 class="font-bold text-lg mb-2">Tăng tốc & Dự phòng</h4>
+                    <p class="text-sm text-brand-gold font-bold mb-3 italic">Ngân sách: 500 triệu còn lại</p>
+                    <ul class="space-y-2">
+                        <li class="bullet-point text-sm justified-text">Giữ 50% vốn làm quỹ dự phòng (burn-rate) cho ít nhất 6 tháng vận hành không lợi nhuận.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Quote -->
+        <section class="py-16 text-center animate-fade" style="animation-delay: 0.8s;">
+            <div class="max-w-2xl mx-auto border-t border-b border-brand-gold/30 py-10 px-4">
+                <svg class="w-10 h-10 text-brand-gold mx-auto mb-6 opacity-40" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.34315 15.3601 2 17.017 2H19.017C20.6738 2 22.017 3.34315 22.017 5V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM2.01697 21L2.01697 18C2.01697 16.8954 2.9124 16 4.01697 16H7.01697C7.56925 16 8.01697 15.5523 8.01697 15V9C8.01697 8.44772 7.56925 8 7.01697 8H4.01697C2.9124 8 2.01697 7.10457 2.01697 6V5C2.01697 3.34315 3.36012 2 5.01697 2H7.01697C8.67383 2 10.017 3.34315 10.017 5V15C10.017 18.3137 7.33067 21 4.01697 21H2.01697Z" />
+                </svg>
+                <p class="text-2xl italic text-brand-ink leading-relaxed font-medium">
+                    "Kinh doanh không phải là vung tiền để mua lấy hy vọng, mà là dùng trí tuệ toàn diện để kiến tạo nên những giá trị không thể thay thế."
+                </p>
+            </div>
+        </section>
+
+        <!-- Infographic Suggestion Block -->
+        <aside class="mt-12 p-8 border-2 border-dashed border-brand-gold/40 rounded-3xl bg-stone-50 animate-fade" style="animation-delay: 1s;">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold text-brand-gold mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                        Gợi Ý Trực Quan (Infographic/Mindmap)
+                    </h3>
+                    <p class="text-brand-ink mb-4 font-bold text-lg">Cấu trúc: Kim cương trung tâm + 4 vệ tinh</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-600">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2 h-2 rounded-full bg-brand-gold"></span>
+                            <span><strong>Trung tâm:</strong> 1 Tỷ đồng & Bài toán khởi nghiệp</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+                            <span><strong>Vệ tinh 1:</strong> Tam Thức (Tĩnh lặng, Cân bằng)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+                            <span><strong>Vệ tinh 2:</strong> Hệ Thống (Thấu hiểu, Quy trình)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+                            <span><strong>Vệ tinh 3:</strong> Thẩm Mỹ (Bản sắc, Tầm nhìn)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+                            <span><strong>Vệ tinh 4:</strong> Công Cụ (Công nghệ, Nhân sự)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+    <script>
+        // Simple scroll reveal interaction
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section, aside').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
