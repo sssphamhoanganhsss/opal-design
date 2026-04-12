@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI TRADING - Khuyến Nghị Giao Dịch</title>
+    <title>AI Trade Pro v2.0 - Report</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#0056b3',
-                        background: '#fcfcfc',
-                        charcoal: '#333333',
-                        tradingGreen: '#008c45',
-                        tradingRed: '#d91e18',
-                        glass: 'rgba(255, 255, 255, 0.7)',
+                        'finance-dark': '#343a40',
+                        'finance-muted': '#6c757d',
+                        'finance-bg': '#f8f9fa',
+                        'finance-success': '#28a745',
+                        'finance-danger': '#dc3545',
+                        'finance-warning': '#ffc107',
+                        'finance-info': '#007bff',
                     },
                     fontFamily: {
-                        serif: ['"Times New Roman"', 'serif'],
+                        'serif': ['"Times New Roman"', 'Times', 'serif'],
                     },
                 }
             }
@@ -26,149 +27,200 @@
     </script>
     <style>
         body {
-            background-color: #f4f4f7;
-            color: #333333;
-            font-family: "Times New Roman", serif;
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            line-height: 1.6;
         }
         .glass-card {
-            background: white;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 0 1px 8px rgba(0, 0, 0, 0.02);
+            border-radius: 12px;
             border: 1px solid rgba(0, 0, 0, 0.05);
-            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
         }
-        .glass-card:hover {
-            transform: translateY(-2px);
-        }
-        .action-sell {
-            color: #d91e18;
-            border-bottom: 3px solid #d91e18;
-        }
-        .action-buy {
-            color: #008c45;
-            border-bottom: 3px solid #008c45;
-        }
-        .justified-text {
+        .text-justify {
             text-align: justify;
-            text-justify: inter-word;
         }
-        .section-divider {
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-weight: bold;
+            font-size: 0.875rem;
+        }
+        .divider {
             height: 1px;
-            background: linear-gradient(to right, transparent, rgba(0,0,0,0.1), transparent);
+            background: linear-gradient(to right, transparent, #dee2e6, transparent);
             margin: 2rem 0;
         }
-        .micro-anim {
-            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        .micro-anim:hover {
-            filter: brightness(1.1);
+        .animate-fade-in {
+            animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
     </style>
 </head>
-<body class="p-4 md:p-8">
+<body class="min-h-screen py-10 px-4">
 
-    <div class="max-w-4xl mx-auto">
-        <!-- Header Section -->
-        <header class="text-center mb-10">
-            <h1 class="text-3xl md:text-5xl font-bold text-primary tracking-tight mb-2 uppercase">
-                AI TRADING - Khuyến Nghị Giao Dịch
-            </h1>
-            <div class="w-24 h-1 bg-primary mx-auto opacity-50"></div>
-        </header>
-
-        <!-- Summary Section -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-            <div class="glass-card p-6 rounded-xl text-center">
-                <p class="text-xs uppercase text-gray-500 font-bold tracking-widest mb-1">Mã Giao Dịch</p>
-                <p class="text-2xl font-bold text-charcoal">XAU/USD</p>
-            </div>
-            <div class="glass-card p-6 rounded-xl text-center">
-                <p class="text-xs uppercase text-gray-500 font-bold tracking-widest mb-1">Số Dư Tài Khoản</p>
-                <p class="text-2xl font-bold text-charcoal">200 USD</p>
-            </div>
-            <div class="glass-card p-6 rounded-xl text-center border-t-4 border-primary">
-                <p class="text-xs uppercase text-gray-500 font-bold tracking-widest mb-1">Phần Trăm Rủi Ro</p>
-                <p class="text-2xl font-bold text-primary">20%</p>
-            </div>
+    <div class="max-w-3xl mx-auto">
+        <!-- Header Brand -->
+        <div class="text-center mb-8 animate-fade-in">
+            <h1 class="text-xs tracking-widest uppercase text-finance-muted mb-2">AI Trade Pro v2.0</h1>
+            <h2 class="text-2xl font-bold text-finance-dark">AGENT 4 TERMINAL</h2>
+            <p class="text-sm text-finance-muted">Ngày 13 tháng 04 năm 2026</p>
         </div>
 
-        <!-- Main Recommendation Details Section -->
-        <main class="glass-card rounded-2xl p-6 md:p-12 mb-10 overflow-hidden relative">
-            <div class="absolute top-0 right-0 p-8 opacity-5 select-none pointer-events-none">
-                <svg width="200" height="200" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M16,6L18.29,8.29L13.41,13.17L9.41,9.17L2,16.59L3.41,18L9.41,12L13.41,16L19.71,9.71L22,12V6H16Z" />
-                </svg>
+        <div class="glass-card p-8 md:p-12 animate-fade-in" style="animation-delay: 0.1s;">
+            
+            <!-- Alert Section -->
+            <div class="mb-10 text-center">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-finance-warning bg-opacity-10 mb-4">
+                    <span class="text-3xl text-finance-warning">⚠️</span>
+                </div>
+                <h3 class="text-2xl md:text-3xl font-bold text-finance-danger mb-2 leading-tight">
+                    CHƯA ĐỦ ĐIỀU KIỆN VÀO LỆNH
+                </h3>
+                <p class="text-finance-muted uppercase tracking-wide text-sm font-semibold">Tín hiệu giao dịch bị từ chối</p>
             </div>
 
-            <h2 class="text-2xl font-bold text-primary mb-8 border-l-4 border-primary pl-4">
-                Chi Tiết Khuyến Nghị
-            </h2>
-
-            <!-- Action Highlight -->
-            <div class="flex flex-col items-center justify-center mb-12 py-8 bg-gray-50 rounded-2xl border border-gray-100">
-                <span class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">Hướng Giao Dịch</span>
-                <span class="text-6xl md:text-8xl font-black action-sell italic tracking-tighter">SELL</span>
-            </div>
-
-            <!-- Parameters Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 mb-12">
-                <div class="flex justify-between items-center border-b border-gray-100 pb-2">
-                    <span class="font-bold text-gray-600">Điểm vào lệnh:</span>
-                    <span class="text-xl font-bold text-charcoal italic">4.748,73 USD</span>
+            <!-- Psychology Guard -->
+            <div class="mb-8">
+                <div class="flex items-center mb-4">
+                    <div class="h-px flex-grow bg-gray-200"></div>
+                    <span class="px-4 text-xs font-bold uppercase tracking-widest text-finance-muted">Kiểm Tra Tâm Lý</span>
+                    <div class="h-px flex-grow bg-gray-200"></div>
                 </div>
-                <div class="flex justify-between items-center border-b border-gray-100 pb-2">
-                    <span class="font-bold text-gray-600">Khối lượng (Lot):</span>
-                    <span class="text-xl font-bold text-charcoal italic">0,14 Lot</span>
-                </div>
-                <div class="flex justify-between items-center border-b border-gray-100 pb-2">
-                    <span class="font-bold text-gray-600">Chốt lời 1 (TP1):</span>
-                    <span class="text-xl font-bold text-tradingGreen italic">4.731,38 USD</span>
-                </div>
-                <div class="flex justify-between items-center border-b border-gray-100 pb-2">
-                    <span class="font-bold text-gray-600">Dừng lỗ (SL):</span>
-                    <span class="text-xl font-bold text-tradingRed italic">4.777,27 USD</span>
-                </div>
-                <div class="flex justify-between items-center border-b border-gray-100 pb-2">
-                    <span class="font-bold text-gray-600">Chốt lời 2 (TP2):</span>
-                    <span class="text-xl font-bold text-tradingGreen italic">4.710,00 USD</span>
-                </div>
-                <div class="flex justify-between items-center border-b border-gray-100 pb-2">
-                    <span class="font-bold text-gray-600">Điểm tin cậy:</span>
-                    <span class="text-xl font-bold bg-primary text-white px-3 py-1 rounded">90%</span>
-                </div>
-            </div>
-
-            <!-- Rationale Section -->
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-charcoal border-b pb-2">Lý do (Rationale)</h3>
                 
-                <div class="justified-text space-y-4 text-lg text-gray-700 leading-relaxed">
-                    <p>
-                        Dựa trên sự tổng hợp dữ liệu từ các hệ thống phân tích thị trường, quét xu hướng, phân tích kỹ thuật chuyên sâu và quản trị rủi ro, chúng tôi đưa ra khuyến nghị chiến lược bán đối với cặp tỷ giá XAU/USD. Các chỉ báo kỹ thuật trên đa khung thời gian từ ngắn hạn (M15) đến trung hạn (H4) đều đang xác nhận một xu hướng giảm đồng nhất và mạnh mẽ. 
-                    </p>
-                    <p>
-                        Sự xuất hiện của mô hình <strong>Hai đỉnh (Double Top)</strong> trên khung Daily và nến <strong>Nhấn chìm giảm (Bearish Engulfing)</strong> trên khung H1 cho thấy áp lực bán đang áp đảo hoàn toàn. Các chỉ báo động lượng như RSI và MACD đều đang dốc xuống, củng cố đà giảm của giá khi thị trường mở cửa trở lại. Về mặt cơ bản, sự kết hợp giữa việc đồng USD tăng giá nhờ dữ liệu CPI tháng 3 cao hơn dự kiến và sự hạ nhiệt căng thẳng địa chính trị đã làm giảm đáng kể nhu cầu trú ẩn an toàn vào vàng.
-                    </p>
-                    <p>
-                        Về mặt quản trị rủi ro, mặc dù tỷ lệ R/R (1:1.36) chưa đạt mức tối ưu 1:1.8, nhưng điểm vào lệnh được hỗ trợ bởi sự đồng thuận tuyệt đối của các hệ thống phân tích xu hướng và dữ liệu thời gian thực. Các điều kiện tâm lý và giới hạn rủi ro nằm trong mức an toàn. Thị trường đang cho thấy sự đồng thuận cao cho một nhịp điều chỉnh sâu.
-                    </p>
-                    <p class="font-bold italic text-primary">
-                        Lưu ý: Cần chú ý quan sát rủi ro khoảng trống giá (Gap) khi thị trường mở cửa vào phiên Thứ Hai để điều chỉnh điểm vào lệnh nếu cần thiết.
-                    </p>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-sm font-bold">XÁC THỰC:</span>
+                    <span class="status-badge bg-green-100 text-finance-success">✓ NORMAL (ỔN ĐỊNH)</span>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+                    <div class="p-3 bg-gray-50 rounded text-center">
+                        <div class="text-xs text-finance-muted mb-1">Drawdown</div>
+                        <div class="font-bold text-lg">0%</div>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded text-center">
+                        <div class="text-xs text-finance-muted mb-1">Lỗ Ngày</div>
+                        <div class="font-bold text-lg">0%</div>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded text-center">
+                        <div class="text-xs text-finance-muted mb-1">Thắng/Thua</div>
+                        <div class="font-bold text-lg">0 / 0</div>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded text-center">
+                        <div class="text-xs text-finance-muted mb-1">Rủi Ro</div>
+                        <div class="font-bold text-lg">An Toàn</div>
+                    </div>
+                </div>
+                <p class="text-justify text-sm italic text-finance-muted">
+                    Người dùng hiện đang ở trạng thái tâm lý ổn định, không có dấu hiệu của trạng thái Tilt, hưng phấn quá đà (Euphoria) hay tâm lý trả thù thị trường (Revenge trading).
+                </p>
+            </div>
+
+            <!-- Agent Consensus -->
+            <div class="mb-8">
+                <div class="flex items-center mb-4">
+                    <div class="h-px flex-grow bg-gray-200"></div>
+                    <span class="px-4 text-xs font-bold uppercase tracking-widest text-finance-muted">Đồng Thuận Agent</span>
+                    <div class="h-px flex-grow bg-gray-200"></div>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center text-sm">
+                        <span>Agent 0: Thị trường</span>
+                        <span class="text-finance-muted">N/A</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span>Agent 1: Quét tín hiệu</span>
+                        <span class="text-finance-muted">N/A</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span>Agent 2: Phân tích nâng cao</span>
+                        <span class="text-finance-success font-bold">75% (Pass)</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span>Agent 3: Quản trị rủi ro</span>
+                        <span class="text-finance-success font-bold">75% (Pass)</span>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-3 bg-blue-50 border-l-4 border-finance-info rounded-r">
+                    <p class="text-sm font-bold text-finance-info">Kết luận đồng thuận: 2/4 Đơn vị đạt chuẩn.</p>
                 </div>
             </div>
-        </main>
 
-        <!-- Minimalist Footer Identity -->
-        <div class="text-center py-8 border-t border-gray-200">
-            <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-sm font-bold text-gray-500 uppercase tracking-widest">
-                <a href="www.phamhoanganhtokens.com" target="_blank" class="hover:text-primary micro-anim">Website: www.phamhoanganhtokens.com</a>
-                <span class="hidden md:inline text-gray-300">|</span>
-                <span class="text-charcoal">Công ty: AI Design</span>
+            <div class="divider"></div>
+
+            <!-- Detailed Rationale -->
+            <div>
+                <h4 class="font-bold text-lg mb-4 flex items-center">
+                    <span class="mr-2">🚨</span> LÝ DO CHI TIẾT
+                </h4>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h5 class="font-bold text-finance-dark text-sm mb-2 uppercase tracking-tight">Một là: Thiếu sự đồng thuận tối thiểu</h5>
+                        <p class="text-justify text-finance-dark leading-relaxed">
+                            Theo quy tắc vận hành, một lệnh giao dịch chỉ được xem xét khi có ít nhất 3 trên 4 Agent xác nhận mức độ tin cậy trên 65%. Trong trường hợp này, dữ liệu đầu vào từ Agent 0 và Agent 1 chưa cung cấp đủ cơ sở định lượng để hoàn thiện quy trình kiểm tra đồng thuận.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h5 class="font-bold text-finance-dark text-sm mb-2 uppercase tracking-tight">Hai là: Rủi ro tài khoản vượt ngưỡng an toàn</h5>
+                        <p class="text-justify text-finance-dark leading-relaxed mb-4">
+                            Mặc dù phân tích từ Agent 2 đưa ra tín hiệu BÁN (SELL) dựa trên các mô hình kỹ thuật, báo cáo từ Agent 3 (Quản trị rủi ro) cho thấy một nghịch lý lớn. Với số dư <span class="font-bold">200 USD</span>, khoảng cách dừng lỗ (SL) tại vùng <span class="font-bold">4.912,80 USD</span> sẽ gây ra mức lỗ thực tế tương đương <span class="font-bold text-finance-danger text-lg">82,03%</span> giá trị tài khoản.
+                        </p>
+                        <div class="p-4 bg-red-50 border border-red-100 rounded-lg">
+                            <p class="text-sm text-finance-danger font-medium italic">
+                                "Việc mạo hiểm 82% vốn cho một giao dịch đơn lẻ là hành động thiếu chuyên nghiệp, vi phạm nguyên tắc sống còn và có khả năng gây cháy tài khoản ngay lập tức."
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- Footer Recommendation -->
+            <div class="mt-10 pt-6 border-t border-gray-100">
+                <div class="flex items-start gap-4">
+                    <div class="mt-1">
+                        <svg class="w-6 h-6 text-finance-info" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="block font-bold text-sm text-finance-info uppercase mb-1">Khuyến nghị từ hệ thống</span>
+                        <p class="text-justify text-finance-muted text-sm italic">
+                            Hệ thống từ chối thực hiện lệnh giao dịch này để bảo vệ tài sản của người dùng. Tiếp tục quan sát và chờ đợi khi các thông số rủi ro và sự đồng thuận đạt trạng thái tối ưu hơn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- System Metadata -->
+        <div class="mt-6 flex justify-between items-center text-[10px] text-finance-muted uppercase tracking-widest px-2 opacity-50">
+            <span>Symbol: XAU</span>
+            <span>Balance: 200.00 USD</span>
+            <span>Risk Limit: 20%</span>
         </div>
     </div>
 
+    <script>
+        // Simple micro-interaction for the card
+        document.querySelector('.glass-card').addEventListener('mousemove', (e) => {
+            const card = e.currentTarget;
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+        });
+    </script>
 </body>
 </html>
