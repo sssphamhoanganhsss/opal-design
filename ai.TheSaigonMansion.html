@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Saigon Mansion | Siêu Phẩm Kiến Trúc Trường Tồn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+        :root {
+            --gold-primary: #D4AF37;
+            --gold-light: #F9E4B7;
+            --french-blue: #003153;
+            --marble-white: #F5F5F5;
+            --deep-burgundy: #4A0E0E;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #FAF9F6;
+            color: #1a1a1a;
+            scroll-behavior: smooth;
+        }
+
+        .heading-font {
+            font-family: 'Cinzel', serif;
+        }
+
+        .accent-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .outfit-font {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border {
+            border-image: linear-gradient(to right, #BF953F, #FCF6BA, #AA771C) 1;
+        }
+
+        .justified-text {
+            text-align: justify;
+        }
+
+        .parallax-section {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .gallery-image-container {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-image-container:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-image-container img {
+            transition: transform 0.8s ease;
+        }
+
+        .gallery-image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 4px;
+        }
+
+        .nav-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.9);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Header Section -->
+    <header class="w-full bg-white relative overflow-hidden">
+        <nav class="flex justify-between items-center px-6 py-4 border-b border-gray-100">
+            <div class="flex flex-col">
+                <span class="heading-font text-xl font-bold tracking-widest text-[#003153]">AI BẤT ĐỘNG SẢN</span>
+                <span class="outfit-font text-[10px] tracking-[0.3em] text-[#D4AF37] uppercase">The Future of Luxury</span>
+            </div>
+            <a href="www.phamhoanganhtokens.com" target="_blank" class="outfit-font text-sm font-light hover:text-[#D4AF37] transition-colors border-b border-transparent hover:border-[#D4AF37]">
+                www.phamhoanganhtokens.com
+            </a>
+        </nav>
+        
+        <div class="py-24 px-6 text-center relative">
+            <div class="absolute inset-0 opacity-5 pointer-events-none">
+                <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0 100 C 20 0, 50 0, 100 100" stroke="#D4AF37" fill="transparent" stroke-width="0.1" />
+                </svg>
+            </div>
+            <h2 class="outfit-font text-sm uppercase tracking-[0.5em] text-[#D4AF37] mb-4 font-semibold">Siêu phẩm di sản</h2>
+            <h1 class="heading-font text-5xl md:text-7xl lg:text-8xl font-bold text-[#003153] leading-tight mb-8">
+                THE SAIGON <br> MANSION
+            </h1>
+            <div class="w-24 h-1 bg-[#D4AF37] mx-auto mb-8"></div>
+            <p class="accent-font italic text-2xl text-gray-600 max-w-3xl mx-auto">"Kiến Trúc Trường Tồn Giữa Lòng Tuyệt Tác Thiên Nhiên"</p>
+        </div>
+    </header>
+
+    <!-- User Input Context Section -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+        <div class="glass-card rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-12 items-center justify-between shadow-2xl">
+            <div class="flex-1 space-y-4">
+                <h3 class="heading-font text-2xl text-[#003153] border-l-4 border-[#D4AF37] pl-4">THÔNG SỐ QUỸ ĐẤT</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
+                    <div class="space-y-1">
+                        <p class="outfit-font text-xs uppercase tracking-wider text-gray-500">Diện tích khuôn viên</p>
+                        <p class="text-3xl font-bold text-gray-800">500 <span class="text-lg font-normal">m²</span></p>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="outfit-font text-xs uppercase tracking-wider text-gray-500">Vị trí / Địa thế</p>
+                        <p class="text-2xl font-semibold text-[#4A0E0E]">Khu vực Biển / Núi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <p class="justified-text italic text-gray-600 leading-relaxed">
+                    Phương án thiết kế được tối ưu hóa cho quỹ đất đặc thù tại khu vực nghỉ dưỡng cao cấp, kết hợp hài hòa giữa kiến trúc Pháp 1860 và sự phóng khoáng của dinh thự Beverly Hills.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mansion Image Gallery Section -->
+    <section class="bg-[#003153] py-24 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto mb-16 text-center">
+            <h3 class="heading-font text-3xl md:text-4xl text-white mb-4">THỊ GIÁC TUYỆT TÁC</h3>
+            <div class="w-16 h-1 bg-[#D4AF37] mx-auto"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8">
+            <!-- Main Hero Image -->
+            <div class="md:col-span-12 group">
+                <div class="gallery-image-container rounded-lg aspect-video shadow-2xl border border-white/10">
+                    <img src='https://opal.google/board/blobs/d91eaa8c-4ff6-413c-b98f-078722cffec9' alt='General Overview' class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                        <div>
+                            <span class="text-[#D4AF37] outfit-font tracking-widest text-xs uppercase">Toàn cảnh dinh thự</span>
+                            <p class="text-white text-xl mt-2 italic">Sự giao thoa hoàn mỹ giữa vách núi hùng vĩ và đại dương xanh thẳm.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-400 mt-4 text-center italic text-sm">Phối cảnh tổng thể Dinh thự The Saigon Mansion</p>
+            </div>
+
+            <!-- Secondary Images Grid -->
+            <div class="md:col-span-7 group">
+                <div class="gallery-image-container rounded-lg aspect-square shadow-2xl border border-white/10">
+                    <img src='https://opal.google/board/blobs/2096e27c-f307-4a04-9f59-ac774f3ba56b' alt='Grand Reception Hall' class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                        <p class="text-white italic text-lg">Đại sảnh thông tầng với đá Marble Statuario và đèn chùm Baccarat.</p>
+                    </div>
+                </div>
+                <p class="text-gray-400 mt-4 text-center italic text-sm">Grand Reception Hall - Không gian đón khách quyền quý</p>
+            </div>
+
+            <div class="md:col-span-5 space-y-8">
+                <div class="group">
+                    <div class="gallery-image-container rounded-lg aspect-[4/3] shadow-2xl border border-white/10">
+                        <img src='https://opal.google/board/blobs/c630d502-4d4f-4543-8342-11a829f9ae09' alt='Library Bathroom' class="w-full h-full object-cover" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                            <p class="text-white italic text-base">Phòng tắm thư viện độc bản với nội thất gỗ Walnut Bắc Mỹ.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mt-3 text-center italic text-xs">The Library Bathroom - Góc thư giãn thượng lưu</p>
+                </div>
+
+                <div class="group">
+                    <div class="gallery-image-container rounded-lg aspect-[4/3] shadow-2xl border border-white/10">
+                        <img src='https://opal.google/board/blobs/7b4d062b-a98b-48b8-843b-911205653f58' alt='Italian-Tiled Pool' class="w-full h-full object-cover" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                            <p class="text-white italic text-base">Hồ bơi vô cực khảm gạch mosaic thủ công từ Italy.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mt-3 text-center italic text-xs">The Italian-Tiled Pool - Kiệt tác mặt nước</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Estimate Report Section -->
+    <section class="py-24 px-6 bg-[#fcfcfc] relative">
+        <div class="max-w-4xl mx-auto bg-white shadow-[0_35px_60px_-15px_rgba(0,0,0,0.1)] p-12 md:p-20 border-t-8 border-[#D4AF37]">
+            <!-- Report Header -->
+            <div class="text-center mb-16">
+                <h4 class="heading-font text-2xl font-bold text-gray-800 mb-2">TẬP ĐOÀN THE SAIGON MANSION</h4>
+                <p class="outfit-font text-[10px] tracking-[0.4em] uppercase text-gray-400 mb-8">VĂN PHÒNG CHỦ TỊCH & ĐIỀU HÀNH</p>
+                <div class="w-full h-[1px] bg-gray-200 mb-8"></div>
+                <h3 class="text-2xl font-bold uppercase tracking-tight mb-4">BÁO CÁO DỰ TOÁN CHI PHÍ XÂY DỰNG VÀ HOÀN THIỆN NỘI THẤT SIÊU BIỆT THỰ DINH THỰ BIỂN/NÚI (500M2)</h3>
+            </div>
+
+            <!-- Report Content -->
+            <div class="space-y-12 text-lg text-gray-800 leading-relaxed justified-text">
+                <div class="space-y-2">
+                    <p><strong>Kính gửi:</strong> Hội đồng Quản trị và Quý Đối tác</p>
+                    <p><strong>Dự án:</strong> The Saigon Mansion – Heritage Collection</p>
+                    <p><strong>Phong cách kiến trúc:</strong> French Classic 1860, Beverly Hills Luxury và Biểu tượng Sài Gòn.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h5 class="font-bold text-xl uppercase border-b border-gray-100 pb-2">I. TRIẾT LÝ PHÁT TRIỂN: THE SEVEN PHILOSOPHICAL PEARLS</h5>
+                    <p>
+                        Công trình hiện thực hóa 7 viên ngọc triết lý: Vị trí độc tôn (Iconic Location), Quy mô bề thế (Grand Scale), Thiết kế độc bản (One-of-a-Kind), Vật liệu tiêu chuẩn bảo tàng (Museum-Grade), Công nghệ vô hình (Seamless Tech), Tiện ích cá nhân hóa (Personalized Amenities) và Giá trị di sản (Heritage Value).
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h5 class="font-bold text-xl uppercase border-b border-gray-100 pb-2">II. DỰ TOÁN CHI PHÍ (MÔ PHỎNG - ĐƠN VỊ: USD)</h5>
+                    
+                    <div class="grid grid-cols-1 gap-6">
+                        <div class="flex justify-between items-start border-b border-dashed border-gray-200 pb-4">
+                            <div class="pr-4">
+                                <p class="font-bold">1. Thạch cao nhập khẩu (Haussmann Style)</p>
+                                <p class="text-sm text-gray-600 mt-1 italic">Hệ thống chỉ phào thủ công, hoa văn cổ điển Pháp thế kỷ 19, nhập khẩu trực tiếp từ các xưởng nghệ nhân châu Âu.</p>
+                            </div>
+                            <p class="font-bold text-nowrap">450.000 USD</p>
+                        </div>
+
+                        <div class="flex justify-between items-start border-b border-dashed border-gray-200 pb-4">
+                            <div class="pr-4">
+                                <p class="font-bold">2. Gỗ cao cấp (Premium Wood)</p>
+                                <p class="text-sm text-gray-600 mt-1 italic">Gỗ Walnut Bắc Mỹ hoặc Gõ Đỏ Lào loại A cho toàn bộ hệ sàn xương cá và ốp tường (Paneling), đảm bảo độ bền trong môi trường biển/núi.</p>
+                            </div>
+                            <p class="font-bold text-nowrap">850.000 USD</p>
+                        </div>
+
+                        <div class="flex justify-between items-start border-b border-dashed border-gray-200 pb-4">
+                            <div class="pr-4">
+                                <p class="font-bold">3. Đá Marble sang trọng (Luxury Marble)</p>
+                                <p class="text-sm text-gray-600 mt-1 italic">Đá Statuario và Calacatta nguyên khối nhập khẩu Italy cho đại sảnh, cầu thang và khu vực phòng tắm Master.</p>
+                            </div>
+                            <p class="font-bold text-nowrap">1.100.000 USD</p>
+                        </div>
+
+                        <div class="flex justify-between items-start border-b border-dashed border-gray-200 pb-4">
+                            <div class="pr-4">
+                                <p class="font-bold">4. Mạ vàng 24K (24K Gold Plating)</p>
+                                <p class="text-sm text-gray-600 mt-1 italic">Dát vàng thủ công cho các chi tiết phào chỉ, tay nắm cửa và các phụ kiện nội thất Bespoke.</p>
+                            </div>
+                            <p class="font-bold text-nowrap">600.000 USD</p>
+                        </div>
+
+                        <div class="flex justify-between items-start border-b border-dashed border-gray-200 pb-4">
+                            <div class="pr-4">
+                                <p class="font-bold">5. Phí vận hành hệ thống Smart Home (Hàng năm)</p>
+                                <p class="text-sm text-gray-600 mt-1 italic">Bao gồm bảo trì hệ thống Crestron/Lutron, server bảo mật và nâng cấp phần mềm điều khiển từ xa.</p>
+                            </div>
+                            <p class="font-bold text-nowrap">37.000 USD</p>
+                        </div>
+
+                        <div class="flex justify-between items-center py-6 bg-gray-50 px-4 rounded-lg mt-4 border border-[#D4AF37]/30">
+                            <p class="text-xl font-bold uppercase text-[#003153]">TỔNG MỨC ĐẦU TƯ DỰ KIẾN</p>
+                            <p class="text-2xl font-bold text-[#4A0E0E]">6.500.000 USD</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h5 class="font-bold text-xl uppercase border-b border-gray-100 pb-2">III. KẾT LUẬN</h5>
+                    <p>
+                        The Saigon Mansion không chỉ là một công trình lưu trú mà là một di sản kiến trúc, nơi công nghệ hiện đại phục vụ cho những giá trị cổ điển trường tồn.
+                    </p>
+                </div>
+
+                <div class="pt-12 text-right">
+                    <p class="italic">Trân trọng,</p>
+                    <p class="font-bold mt-2">(Đã ký)</p>
+                    <p class="font-bold text-xl accent-font">CEO, The Saigon Mansion Project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concluding Message Section -->
+    <section class="py-32 px-6 bg-gradient-to-b from-[#fcfcfc] to-white">
+        <div class="max-w-4xl mx-auto text-center space-y-10">
+            <div class="inline-block px-4 py-1 border border-[#D4AF37] text-[#D4AF37] uppercase tracking-[0.3em] text-[10px] mb-4">
+                Sứ mệnh di sản
+            </div>
+            <h2 class="accent-font italic text-3xl md:text-5xl text-gray-800 leading-relaxed justified-text max-w-2xl mx-auto">
+                "Công trình là một <span class="text-[#D4AF37] font-bold">siêu phẩm</span> trường tồn nhờ giá trị tinh thần và sự tỉ mỉ trong từng milimet thiết kế."
+            </h2>
+            <div class="pt-10">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="outfit-font group relative px-8 py-4 bg-[#003153] text-white overflow-hidden transition-all duration-300 hover:bg-[#D4AF37]">
+                    <span class="relative z-10 tracking-widest text-xs uppercase font-bold">Về Đầu Trang</span>
+                    <div class="absolute inset-0 bg-[#D4AF37] translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <p class="heading-font text-lg font-bold text-[#003153]">THE SAIGON MANSION</p>
+                <p class="outfit-font text-xs text-gray-400 tracking-wider">A masterpiece by AI Bất Động Sản</p>
+            </div>
+            <div class="flex flex-col items-center md:items-end gap-2">
+                <a href="www.phamhoanganhtokens.com" target="_blank" class="outfit-font text-sm text-[#D4AF37] hover:underline">
+                    www.phamhoanganhtokens.com
+                </a>
+                <p class="text-[10px] text-gray-400 uppercase tracking-tighter">© 2024 Precision Engineered Legacy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for internal links if any were added
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple Intersection Observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        // Apply reveal classes
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
+
